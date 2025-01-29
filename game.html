@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown-Spiel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h2>Willkommen zum Dropdown-Spiel!</h2>
+        <form id="quiz-form">
+            <div class="question">
+                <label for="question1">Frage 1: Was ist die Hauptstadt von Frankreich?</label>
+                <select id="question1">
+                    <option value="paris">Paris</option>
+                    <option value="berlin">Berlin</option>
+                    <option value="london">London</option>
+                    <option value="madrid">Madrid</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <label for="question2">Frage 2: Wer hat die Relativitätstheorie aufgestellt?</label>
+                <select id="question2">
+                    <option value="newton">Isaac Newton</option>
+                    <option value="einstein">Albert Einstein</option>
+                    <option value="tesla">Nikola Tesla</option>
+                    <option value="curie">Marie Curie</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <label for="question3">Frage 3: Was ist 5 + 3?</label>
+                <select id="question3">
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>
+            </div>
+
+            <button type="button" id="submit-btn">Antworten prüfen</button>
+        </form>
+
+        <p id="score"></p>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
