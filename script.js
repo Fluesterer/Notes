@@ -27,9 +27,9 @@ document.addEventListener("DOMContentLoaded", function() {
         if (captchaInput.value === captchaCodeEl.textContent) {
             resultEl.textContent = "Erfolgreich verifiziert!";
             resultEl.style.color = "green";
-            // Nach erfolgreicher Verifizierung auf Notizen-Seite weiterleiten
+            // Nach erfolgreicher Verifizierung zum Spiel weiterleiten
             setTimeout(function() {
-                window.location.href = "notes.html"; // Weiterleitung zur Notizen-Seite
+                window.location.href = "game.html"; // Weiterleitung zum Spiel
             }, 1500); // Warten 1,5 Sekunden bevor umgeleitet wird
         } else {
             resultEl.textContent = "Falscher Code. Bitte versuchen Sie es erneut.";
