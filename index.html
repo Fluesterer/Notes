@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAPTCHA Beispiel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="captcha-container">
+        <h2>Bitte bestätigen Sie, dass Sie kein Roboter sind:</h2>
+        <div class="captcha">
+            <div class="captcha-code" id="captcha-code"></div>
+            <button id="refresh-btn">Neu laden</button>
+            <input type="text" id="captcha-input" placeholder="Geben Sie den Code ein" />
+            <button id="verify-btn">Überprüfen</button>
+        </div>
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
